@@ -1,0 +1,36 @@
+
+.who-soundtracked-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.who-soundtracked__profile-image-container {
+  position: relative;
+  width: 305px;
+  height: 305px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-soundtracked__profile-image--background {
+  position: absolute;
+  width: 305px;
+  height: 305px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(194.17% 194.17% at 24.58% -33.33%, #589AF2 0%, #7A4CDE 100%);
+  filter: blur(78px);
+}
+
+.who-soundtracked__profile-image--figure {
+  width: 228px;
+  height: 228px;
+}
+
+.who-soundtracked__profile-image--image {
+  width: 100%;
+  height: 100%;
+}
