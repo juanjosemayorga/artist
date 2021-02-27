@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from './Hero/Hero'
+import Main from './Main/Main'
 
 const App = () => (
   <>
-    <Hero />
+    <Main />
   </>
   )
 

@@ -1,0 +1,23 @@
+.songs-downloaded-container {
+  color: var(--white-color);
+}
+
+.songs-downloaded__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 30px;
+}
+
+.songs-downloaded__title--number {
+  background: -webkit-linear-gradient(135deg, #43CBFF 0%, #9708CC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.songs-downloaded__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 16px 30px 0;
+}
