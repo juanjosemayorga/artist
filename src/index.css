@@ -1,0 +1,21 @@
+:root {
+  --black-color: #0B0B0B;
+  --yellow-color: #FED941;
+  --grey-color: #BDBDBD;
+  --white-color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--black-color);
+}
