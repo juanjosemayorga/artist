@@ -17,9 +17,18 @@ const WhoSoundtrackedMost = () => {
           />
         </figure>
       </div>
-      <h3>Rex Banner soundtracked most of your videos</h3>
-      <p>You downloaded 10 of their songs</p>
-      <p>Jump back into Rex Banner's music</p>
+      <h3 className="who-soundtracked__title">
+        Rex Banner
+        <br />
+        soundtracked
+        <br />
+        most of your videos
+      </h3>
+      <p className="who-soundtracked__subtitle">
+        You downloaded
+        <span> 10 </span>
+        of their songs. Jump back into Rex Banner&#039;s music
+      </p>
     </div>
   )
 }
