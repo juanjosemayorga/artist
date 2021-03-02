@@ -13,8 +13,11 @@ const CreatedVideos = () => (
     <div className="created-videos__random-albums-container">
       <h3 className="created-videos__random-albums-container--text">UPLIFTING</h3>
       {
-        ALBUMS.map(album => (
-          <figure key={album.id}>
+        ALBUMS.map((album, i) => (
+          <figure
+            className={`created-videos__uplifting-album--${i}`}
+            key={album.id}
+          >
             <img
               src={album.link}
               alt={album.name}

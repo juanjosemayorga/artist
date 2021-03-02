@@ -27,6 +27,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 56px;
+  height: 320px;
 }
 
 .created-videos__random-albums-container img {
@@ -36,10 +37,47 @@
 .created-videos__random-albums-container--text {
   position: absolute;
   top: 0;
-  font-size: 56px;
+  font-size: 6rem;
   font-weight: bold;
-  -webkit-text-stroke: 2px var(--grey-color);
+  -webkit-text-stroke: 1px var(--grey-color);
   color: var(--black-color);
   text-align: center;
   z-index: -10;
 }
+
+/* Uplifting albums */
+
+.created-videos__uplifting-album--0 {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: 48px;
+  left: 0;
+}
+
+.created-videos__uplifting-album--1 {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  top: 48px;
+  right: 16px;
+}
+
+.created-videos__uplifting-album--2 {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: 140px;
+  left: 85px;
+  z-index: 1;
+}
+
+.created-videos__uplifting-album--3 {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  bottom: 0;
+  right: 16px;
+}
+
+/* Uplifting albums ends here */
