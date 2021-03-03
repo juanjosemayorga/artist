@@ -52,6 +52,6 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 3000,
-    host: '192.168.1.78'
+    host: '192.168.1.89'
   },
 };

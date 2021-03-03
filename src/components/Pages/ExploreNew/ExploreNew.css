@@ -8,4 +8,39 @@
   font-weight: bold;
   text-align: center;
   color: var(--white-color);
+  margin: 0 30px;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.explore-new__slider-container {
+  margin-top: 48px;
+}
+
+.explore-new-container img {
+  margin: auto;
+}
+
+.slick-dots {
+  position: relative;
+  margin-top: 40px;
+  background-color: tomato;
+}
+
+.slick-dots li button:before {
+  color: var(--white-color);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--white-color);
 }
