@@ -33,14 +33,40 @@
 
 .slick-dots {
   position: relative;
+  width: 140px;
   margin-top: 40px;
   background-color: tomato;
 }
 
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+
 .slick-dots li button:before {
+  position: static;
   color: var(--white-color);
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .slick-dots li.slick-active button:before {
   color: var(--white-color);
+}
+
+.slick-next:before {
+  font-family: FontAwesome;
+  content: '\f105';
+}
+
+.slick-prev:before {
+  font-family: FontAwesome;
+  content: '\f104';
 }
