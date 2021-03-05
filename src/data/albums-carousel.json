@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614740411/artist-project/Kevin_Graham-Ablaze-A1_qev4ga.png",
+    "name": "Ablaze"
+  },
+  {
+    "id": 2,
+    "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614960626/artist-project/more_albums/random_access_memories_jz9ynv.png",
+    "name": "Random Access Memories"
+  },
+  {
+    "id": 3,
+    "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614960626/artist-project/more_albums/american_idiot_ez4wyx.png",
+    "name": "American Idiot"
+  },
+  {
+    "id": 4,
+    "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614960626/artist-project/more_albums/mermerize_h4ykqz.png",
+    "name": "Mezmerize"
+  },
+  {
+    "id": 5,
+    "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614960626/artist-project/more_albums/the_dark_side_of_the_moon_hxlswa.png",
+    "name": "The Dark Side of the Moon"
+  }
+]

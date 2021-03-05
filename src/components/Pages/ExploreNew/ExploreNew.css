@@ -13,14 +13,16 @@
 
 .slick-prev {
   position: absolute;
-  left: 0;
+  left: 25%;
   z-index: 1;
+  top: 396px;
 }
 
 .slick-next {
   position: absolute;
-  right: 0;
+  right: 25%;
   z-index: 1;
+  top: 396px;
 }
 
 .explore-new__slider-container {
@@ -33,15 +35,15 @@
 
 .slick-dots {
   position: relative;
-  width: 140px;
+  /* width: 140px; */
   margin-top: 40px;
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .slick-dots li {
   width: 12px;
   height: 12px;
-  margin: 0 8px;
+  margin: 0 4px;
 }
 
 .slick-dots li button {
