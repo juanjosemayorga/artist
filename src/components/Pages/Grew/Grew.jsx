@@ -1,4 +1,7 @@
 import React from 'react'
+import PlayMusicIcon from '../../assets/icons/PlayMusicIcon'
+import SoundBarsIcon from '../../assets/icons/SoundBarsIcon'
+import SpeakerIcon from '../../assets/icons/SpeakerIcon'
 import './Grew.css'
 
 const Grew = () => (
@@ -11,13 +14,18 @@ const Grew = () => (
       SFX were added to the catalog to bring your vision to life
     </h3>
     <h2 className="grew__year">2021</h2>
-    <p>Check out the best of 2020 collections</p>
-    <button type="button">Browse Collections</button>
-    <div>
-      icon 1
-      icon 2
+    <p className="grew__collections-text">Check out the best of 2020 collections</p>
+    <button
+      className="grew__browse-collections-button"
+      type="button"
+    >
+      Browse Collections
+    </button>
+    <div className="grew__play-icons-container">
+      <SoundBarsIcon className="grew__play-icons--right" />
+      <PlayMusicIcon className="grew__play-icons--right" />
       <p>D Fine Us / Howling at the Moon</p>
-      icon3
+      <SpeakerIcon />
     </div>
   </div>
 )
