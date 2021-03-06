@@ -1,6 +1,6 @@
 import React from 'react'
+import ALBUMS from '@Data/created-video.json'
 import './CreatedVideos.css'
-import ALBUMS from '../../../data/created-video.json'
 
 const CreatedVideos = () => (
   <section className="created-videos-container">

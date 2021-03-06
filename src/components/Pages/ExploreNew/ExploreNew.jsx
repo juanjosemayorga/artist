@@ -1,8 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick';
+import ALBUMS from '@Data/albums-carousel.json'
 import './ExploreNew.css'
-import ALBUMS from '../../../data/albums-carousel.json'
-
 
 const settings = {
   dots: true,
@@ -12,8 +11,6 @@ const settings = {
   slidesToScroll: 1,
   arrows: true,
 };
-
-const PICTURE = 'https://res.cloudinary.com/juanjosemayorga/image/upload/v1614740411/artist-project/Kevin_Graham-Ablaze-A1_qev4ga.png'
 
 const ExploreNew = () => (
   <div className="explore-new-container">

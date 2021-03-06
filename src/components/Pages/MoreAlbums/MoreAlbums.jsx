@@ -1,6 +1,6 @@
 import React from 'react'
+import IMAGES_ALBUMS from '@Data/more-albums.json'
 import './MoreAlbums.css'
-import IMAGES_ALBUMS from '../../../data/more-albums.json'
 
 const MoreAlbums = () => (
   <div className="albums-component-container">

@@ -1,7 +1,8 @@
 import React from 'react'
-import PlayMusicIcon from '../../assets/icons/PlayMusicIcon'
-import SoundBarsIcon from '../../assets/icons/SoundBarsIcon'
-import SpeakerIcon from '../../assets/icons/SpeakerIcon'
+
+import PlayMusicIcon from '@Assets/icons/PlayMusicIcon'
+import SoundBarsIcon from '@Assets/icons/SoundBarsIcon'
+import SpeakerIcon from '@Assets/icons/SpeakerIcon'
 import './Grew.css'
 
 const Grew = () => (
