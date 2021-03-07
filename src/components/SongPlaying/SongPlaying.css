@@ -1,0 +1,35 @@
+
+.song-playing__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 44.5px 0;
+  align-self: center;
+}
+
+.song-playing__container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 12px;
+}
+
+.song-playing__right {
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 1366px) {
+
+  .song-playing__container {
+    margin: 32 0 0 0;
+  }
+
+  .song-playing__container p {
+    font-size: 2.5rem;
+    margin-right: 16px;
+  }
+
+  .song-playing__right {
+    margin-right: 16px;
+  }
+
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import SongPlaying from '@Components/SongPlaying/SongPlaying'
 import './Hero.css'
 
 const Hero = () => (
@@ -8,6 +9,7 @@ const Hero = () => (
       <h3 className="hero__section-container--year">2020</h3>
       <h2 className="hero__section-container--text">Your year as an Artlist Creator</h2>
       <button className="hero__section-container--button" type="button">PLAY</button>
+      <SongPlaying />
     </section>
   </div>
   )

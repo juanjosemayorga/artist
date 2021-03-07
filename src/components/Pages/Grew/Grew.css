@@ -57,22 +57,3 @@
   border-radius: 40px;
   align-self: center;
 }
-
-.grew__play-icons-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 44.5px 0;
-  align-self: center;
-}
-
-.grew__play-icons-container p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-right: 12px;
-}
-
-.grew__play-icons--right {
-  margin-right: 12px;
-}
-

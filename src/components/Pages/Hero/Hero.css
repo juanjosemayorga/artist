@@ -35,7 +35,51 @@
   border: none;
   border-radius: 40px;
   margin-top: 16px;
+  font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--black-color);
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large */
+
+@media screen and (min-width: 1366px) {
+  .hero__container {
+    display: flex;
+    flex-direction: row;
+    width: 1366px;
+    justify-self: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .hero__title {
+    font-size: 64rem;
+    margin: 0;
+    left: -104px;
+  }
+
+  .hero__section-container {
+    margin-left: 60px;
+    padding-top: 255px;
+    width: 377px;
+  }
+
+  .hero__section-container--year {
+    font-size: 3.7rem;
+  }
+
+  .hero__section-container--text {
+    font-size: 5rem;
+  }
+
+  .hero__section-container--button {
+    width: 179px;
+    height: 78px;
+    font-size: 2.4rem;
+  }
 }

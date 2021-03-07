@@ -1,8 +1,5 @@
 import React from 'react'
-
-import PlayMusicIcon from '@Assets/icons/PlayMusicIcon'
-import SoundBarsIcon from '@Assets/icons/SoundBarsIcon'
-import SpeakerIcon from '@Assets/icons/SpeakerIcon'
+import SongPlaying from '@Components/SongPlaying/SongPlaying'
 import './Grew.css'
 
 const Grew = () => (
@@ -22,12 +19,7 @@ const Grew = () => (
     >
       Browse Collections
     </button>
-    <div className="grew__play-icons-container">
-      <SoundBarsIcon className="grew__play-icons--right" />
-      <PlayMusicIcon className="grew__play-icons--right" />
-      <p>D Fine Us / Howling at the Moon</p>
-      <SpeakerIcon />
-    </div>
+    <SongPlaying />
   </div>
 )
 
