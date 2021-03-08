@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -14,7 +14,8 @@ module.exports = {
       '@Components': path.resolve(__dirname, 'src/components/'),
       '@Assets': path.resolve(__dirname, 'src/assets/'),
       '@Data': path.resolve(__dirname, 'src/data/'),
-      '@Pages': path.resolve(__dirname, 'src/pages/')
+      '@Pages': path.resolve(__dirname, 'src/pages/'),
+      '@Hooks': path.resolve(__dirname, 'src/hooks/')
     }
   },
   module: {
