@@ -6,6 +6,24 @@
   margin-top: 64px;
 }
 
-.albums-component__figure {
+.albums-component-container figure {
+  position: relative;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .albums-component-container {
+    background-color: tomato;
+  }
+  .albums-component-container figure {
+    width: 355px;
+    height: 355px;
+  }
+  .albums-component-container figure img {
+    width: 100%;
+    height: 100%;
+  }
+  .albums-component__figure--0 {
+    left: 25px;
+  }
 }
