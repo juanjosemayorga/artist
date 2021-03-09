@@ -6,7 +6,6 @@ import './Hero.css'
 const Hero = () => {
 
   const { width } = useWindowSize()
-  console.log(`Este es el ancho: ${width}px`);
 
   return (
     <div className="hero__container">
@@ -18,7 +17,7 @@ const Hero = () => {
           <button className="hero__section-container--button" type="button">PLAY</button>
         </section>
         <SongPlaying
-          visibility={false}
+          visibility={width > 768}
         />
       </div>
     </div>
