@@ -45,10 +45,11 @@
   .hero__container {
     display: flex;
     flex-direction: row;
-    width: 1366px;
+    max-width: 1366px;
     justify-self: center;
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: cornflowerblue;
   }
 
   .hero__title {

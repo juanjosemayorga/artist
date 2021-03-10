@@ -1,11 +1,11 @@
 
-.albums-component-container {
+.more-albums-component-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
 }
 
-.albums-component__figure {
+.more-albums-component__figure {
   margin-bottom: 8px;
 }
