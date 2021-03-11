@@ -2,24 +2,56 @@
 .albums-component-container {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(5, 355px);
+  grid-template-rows: repeat(5, 1fr);
   justify-content: center;
   margin-top: 64px;
-}
-
-.albums-component-container figure {
-  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .albums-component-container {
     max-width: 1366px;
-    /* width: 100vw; */
     justify-self: center;
     margin: 0 auto;
     height: 1888px;
-    background-color: tomato;
     margin-top: 128px;
+  }
+  .albums-component__internal-album {
+    position: relative;
+  }
+  .albums-component__internal-album--hover {
+    display: none;
+  }
+  .albums-component__internal-album--hover p {
+    position: absolute;
+    display: inline;
+    white-space: pre;
+    font-size: 5.1rem;
+    font-weight: 700;
+    -webkit-text-stroke: 2px var(--grey-color);
+  }
+  .albums-component__internal-album--figure {
+    width: 355px;
+    height: 355px;
+  }
+  .albums-component__internal-album--figure img {
+    width: 100%;
+    height: 100%;
+  }
+  /* .albums-component__album:hover .albums-component__hover {
+    position: absolute;
+    display: flex;
+    height: 325px;
+    background-color: var(--black-color);
+  }
+  .albums-component__hover {
+    display: flex;
+    width: 355px;
+    height: 355px;
+  }
+  .albums-component__hover:hover {
+    position: absolute;
+    top: 0;
+    z-index: 10;
   }
   .albums-component-container figure {
     position: absolute;
@@ -32,24 +64,56 @@
   .albums-component-container figure img {
     width: 100%;
     height: 100%;
+  } */
+  .albums-component__album-container {
+    position: absolute;
   }
-  .albums-component__figure--0 {
+  .albums-component__album-container:hover .albums-component__internal-album--hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 355px;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .albums-component__album-container--0 {
     left: 25px;
   }
-  .albums-component__figure--1 {
+  .albums-component__hover--title--0 {
+    top: 50px;
+    left: 178px;
+  }
+  .albums-component__album-container--1 {
     top: 296px;
     right: 248px;
   }
-  .albums-component__figure--2 {
+  .albums-component__hover--title--1 {
+    bottom: 50px;
+    right: 178px;
+  }
+  .albums-component__album-container--2 {
     top: 810px;
     left: 137px;
   }
-  .albums-component__figure--3 {
+  .albums-component__hover--title--2 {
+    top: 50px;
+    left: 178px;
+  }
+  .albums-component__album-container--3 {
     top: 1131px;
     right: 25px;
   }
-  .albums-component__figure--4 {
+  .albums-component__hover--title--3 {
+    bottom: 50px;
+    right: 178px;
+  }
+  .albums-component__album-container--4 {
     top: 1533px;
     left: 428px;
+  }
+  .albums-component__hover--title--4 {
+    top: 50px;
+    right: 178px;
   }
 }
