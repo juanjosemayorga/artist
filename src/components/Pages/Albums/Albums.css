@@ -6,6 +6,9 @@
   justify-content: center;
   margin-top: 64px;
 }
+.albums-component__internal-album--hover {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .albums-component-container {
@@ -19,7 +22,18 @@
     position: relative;
   }
   .albums-component__internal-album--hover {
-    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 355px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: opacity ease .3s;
+  }
+  .albums-component__internal-album--hover input {
+    outline: none;
   }
   .albums-component__internal-album--hover p {
     position: absolute;
@@ -37,45 +51,11 @@
     width: 100%;
     height: 100%;
   }
-  /* .albums-component__album:hover .albums-component__hover {
-    position: absolute;
-    display: flex;
-    height: 325px;
-    background-color: var(--black-color);
-  }
-  .albums-component__hover {
-    display: flex;
-    width: 355px;
-    height: 355px;
-  }
-  .albums-component__hover:hover {
-    position: absolute;
-    top: 0;
-    z-index: 10;
-  }
-  .albums-component-container figure {
-    position: absolute;
-    margin: 0;
-  }
-  .albums-component-container figure {
-    width: 355px;
-    height: 355px;
-  }
-  .albums-component-container figure img {
-    width: 100%;
-    height: 100%;
-  } */
   .albums-component__album-container {
     position: absolute;
   }
   .albums-component__album-container:hover .albums-component__internal-album--hover {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 355px;
-    height: 355px;
-    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
   }
   .albums-component__album-container--0 {
     left: 25px;
