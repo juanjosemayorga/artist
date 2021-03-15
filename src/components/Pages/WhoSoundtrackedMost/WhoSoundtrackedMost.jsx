@@ -33,7 +33,7 @@ const WhoSoundtrackedMost = () => {
         of their songs. Jump back into Rex Banner&#039;s music
       </p>
       <div className="who-soundtracked__more-albums-component--container">
-        {width > 768 && <MoreAlbums />}
+        {width >= 768 && <MoreAlbums />}
       </div>
     </div>
   )
