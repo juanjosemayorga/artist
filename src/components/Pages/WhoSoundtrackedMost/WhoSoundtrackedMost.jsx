@@ -1,9 +1,11 @@
 import React from 'react'
+import useWindowSize from '@Hooks/useWindowSize'
 import './WhoSoundtrackedMost.css'
 
 const WhoSoundtrackedMost = () => {
 
   const PROFILE_PICTURE = 'https://res.cloudinary.com/juanjosemayorga/image/upload/v1614440553/artist-project/ellipse_person_orvid1.png'
+  const { width } = useWindowSize();
 
   return (
     <div className="who-soundtracked-container">
@@ -19,7 +21,7 @@ const WhoSoundtrackedMost = () => {
       </div>
       <h3 className="who-soundtracked__title">
         Rex Banner
-        <br />
+        {width < 768 ? <br /> : ' '}
         soundtracked
         <br />
         most of your videos
