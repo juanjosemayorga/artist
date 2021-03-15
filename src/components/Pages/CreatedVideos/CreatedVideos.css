@@ -80,4 +80,76 @@
   right: 16px;
 }
 
+.created-videos__uplifting-album--4 {
+  position: absolute;
+  display: none;
+}
+
 /* Uplifting albums ends here */
+
+@media screen and (min-width: 768px) {
+  .created-videos-container {
+    max-width: 1366px;
+    justify-self: center;
+    margin: 200px auto 0;
+    padding-left: 25px;
+  }
+  .created-videos__title {
+    font-size: 5rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .created-videos__title span {
+    display: block;
+  }
+  .created-videos__subtitle {
+    margin-top: 32px;
+    font-size: 2.5rem;
+  }
+  .created-videos__random-albums-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 128px;
+    width: 1128px;
+    height: 422px;
+  }
+  .created-videos__random-albums-container--text {
+    font-size: 15rem;
+    right: 78px;
+  }
+
+/* Uplifting albums */
+
+  .created-videos__uplifting-album--0 {
+    width: 328px;
+    height: 328px;
+    top: 94px;
+  }
+  .created-videos__uplifting-album--1 {
+    width: 275px;
+    height: 275px;
+    top: 81px;
+    right: 215px;
+    z-index: 1;
+  }
+  .created-videos__uplifting-album--2 {
+    width: 226px;
+    height: 226px;
+    top: 110px;
+    left: 268px;
+  }
+  .created-videos__uplifting-album--3 {
+    width: 239px;
+    height: 239px;
+    bottom: 23px;
+    right: 470px;
+  }
+  .created-videos__uplifting-album--4 {
+    display: inline;
+    width: 239px;
+    height: 239px;
+    right: 0;
+    bottom: 23px;
+  }
+
+}

@@ -4,7 +4,10 @@ import './CreatedVideos.css'
 
 const CreatedVideos = () => (
   <section className="created-videos-container">
-    <h3 className="created-videos__title">You created a lot of Uplifting videos this year</h3>
+    <h3 className="created-videos__title">
+      You created a lot of Uplifting videos
+      <span>this year</span>
+    </h3>
     <p className="created-videos__subtitle">
       You downloaded
       <span> 118 </span>
