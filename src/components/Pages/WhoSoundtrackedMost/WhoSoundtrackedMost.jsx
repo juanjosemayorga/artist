@@ -1,4 +1,5 @@
 import React from 'react'
+import MoreAlbums from '@Components/Pages/MoreAlbums/MoreAlbums'
 import useWindowSize from '@Hooks/useWindowSize'
 import './WhoSoundtrackedMost.css'
 
@@ -31,6 +32,9 @@ const WhoSoundtrackedMost = () => {
         <span> 10 </span>
         of their songs. Jump back into Rex Banner&#039;s music
       </p>
+      <div className="who-soundtracked__more-albums-component--container">
+        {width > 768 && <MoreAlbums />}
+      </div>
     </div>
   )
 }

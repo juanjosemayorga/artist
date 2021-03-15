@@ -9,3 +9,21 @@
 .more-albums-component__figure {
   margin-bottom: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .more-albums-component-container {
+    flex-direction: row;
+    margin: 0;
+    margin-right: 24px;
+  }
+  .more-albums-component__figure {
+    margin: 0;
+    margin-right: 24px;
+    width: 125px;
+    height: 125px;
+  }
+  .more-albums-component__figure img {
+    width: 100%;
+    height: 100%;
+  }
+}

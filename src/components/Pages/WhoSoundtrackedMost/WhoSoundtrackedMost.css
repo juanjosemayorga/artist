@@ -58,9 +58,10 @@
 
 @media screen and (min-width: 768px) {
   .who-soundtracked-container {
+    position: relative;
     display: grid;
     grid-template-columns: 686px 680px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     max-width: 1366px;
     justify-self: center;
     margin: 200px auto 0;
@@ -74,7 +75,7 @@
   .who-soundtracked__profile-image-container {
     margin-right: 80px;
     grid-column: 2 / 3;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     width: 600px;
     height: 600px;
   }
@@ -87,6 +88,8 @@
     height: 447px;
   }
   .who-soundtracked__title {
+    position: absolute;
+    bottom: -56px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 5rem;
@@ -94,10 +97,19 @@
     text-align: start;
   }
   .who-soundtracked__subtitle {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
     align-self: flex-start;
     font-size: 2.5rem;
     margin: 0 25px;
     text-align: start;
+  }
+  .who-soundtracked__more-albums-component--container {
+    position: absolute;
+    top: -64px;
+    margin-left: 25px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
   }
 }
 

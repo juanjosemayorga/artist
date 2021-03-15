@@ -9,17 +9,24 @@ import CreatedVideos from '@Components/Pages/CreatedVideos/CreatedVideos'
 import ExploreNew from '@Components/Pages/ExploreNew/ExploreNew'
 import Grew from '@Components/Pages/Grew/Grew'
 
-const Main = () => (
-  <>
-    <Hero />
-    <SongsDownloaded />
-    <Albums />
-    <WhoSoundtrackedMost />
-    <MoreAlbums />
-    <CreatedVideos />
-    <ExploreNew />
-    <Grew />
-  </>
-)
+import useWindowSize from '@Hooks/useWindowSize'
+
+const Main = () => {
+
+  const { width } = useWindowSize()
+
+  return (
+    <>
+      <Hero />
+      <SongsDownloaded />
+      <Albums />
+      <WhoSoundtrackedMost />
+      {width < 768 && <MoreAlbums />}
+      <CreatedVideos />
+      <ExploreNew />
+      <Grew />
+    </>
+  )
+}
 
 export default Main
