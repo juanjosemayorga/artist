@@ -57,3 +57,27 @@
   border-radius: 40px;
   align-self: center;
 }
+
+@media screen and (min-width: 768px) {
+  .grew-container {
+    max-width: 1366px;
+    justify-self: center;
+    margin: 264px auto 0;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+  }
+  .grew__first-text {
+    font-size: 2.5rem;
+  }
+  .grew__title {
+    font-size: 5.1rem;
+    text-align: center;
+    align-self: center;
+    padding: 0 10px;
+  }
+  .grew__year {
+    font-size: 64rem;
+    margin-top: 200px;
+    left: -239px;
+  }
+}
