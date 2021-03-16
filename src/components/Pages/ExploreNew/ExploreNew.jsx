@@ -21,7 +21,8 @@ const ExploreNew = () => (
           ALBUMS.map(album => (
             <figure
               key={album.id}
-              className="explore-new__carousel-figure">
+              className="explore-new__carousel-figure"
+            >
               <img
                 className="explore-new__carousel-image"
                 src={album.link}
