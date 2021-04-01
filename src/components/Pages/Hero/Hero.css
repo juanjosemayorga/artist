@@ -39,6 +39,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--black-color);
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
