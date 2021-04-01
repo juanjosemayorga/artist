@@ -2,26 +2,36 @@
   {
     "id": 1,
     "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614439080/artist-project/omer_Katz_ft_aqdwkl.jpg",
-    "name": "Howling at the Moon"
+    "name": "Howling at the Moon",
+    "artist": "D Fine Us",
+    "song": "https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Howling+at+the+Moon.mp3"
   },
   {
     "id": 2,
     "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614439080/artist-project/Anton_Vlasov_-_Extreme_A_ed6wpj.jpg",
-    "name": "Extreme"
+    "name": "Extreme",
+    "artist": "Anton Vlasov",
+    "song": "https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Extreme.mp3"
   },
   {
     "id": 3,
     "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614439080/artist-project/Ian-Post--Close-Your-Eyes-And-A_rq9zn7.jpg",
-    "name": "Close your eyes and..."
+    "name": "Close your eyes and...",
+    "artist": "Ian post",
+    "song": "https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Close+Your+Eyes+And.mp3"
   },
   {
     "id": 4,
     "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614439080/artist-project/Sean-Fischer-Y-A_wzrbvh.jpg",
-    "name": "Millennial Uplifting Bangers"
+    "name": "Millennial Uplifting Bangers",
+    "artist": "Rex Banner",
+    "song": "https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Millennial+Uplifting+Bangers.mp3"
   },
   {
     "id": 5,
     "link": "https://res.cloudinary.com/juanjosemayorga/image/upload/v1614439080/artist-project/Ofrin_-_Take_It_to_the_Top_-_A_w5bfso.jpg",
-    "name": "Take it to the top"
+    "name": "Take it to the top",
+    "artist": "Ofrin",
+    "song": "https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Take+It+to+the+Top.mp3"
   }
 ]

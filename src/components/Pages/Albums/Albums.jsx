@@ -4,9 +4,14 @@ import IMAGES_ALBUMS from '@Data/albums.json'
 import PLAY_ROUNDED_ICON from '@Assets/icons/play-round.png'
 import PAUSE_ROUNDED_ICON from '@Assets/icons/pause-round.png'
 
+import { connect } from 'react-redux'
+import { playSong } from '@Redux/actionCreators'
+
+import useAudio from '@Hooks/useAudio'
+
 import './Albums.css'
 
-const Albums = () => {
+const Albums = ({ handlePlaySong }) => {
 
   const initialPlaying = {
     1: false,
@@ -16,18 +21,20 @@ const Albums = () => {
     5: false,
   }
 
-  const [playing, setPlaying] = useState(initialPlaying)
+  const [playingSong, setPlayingSong] = useState(initialPlaying)
 
-  const handlePlay = (e) => {
+  const handlePlay = (album) => {
 
-    const choosed = e.target.name
+    handlePlaySong(album)
 
-    if (playing[choosed]) {
-      setPlaying(initialPlaying)
+    const choosed = album.id
+
+    if (playingSong[choosed]) {
+      setPlayingSong(initialPlaying)
     } else {
-      setPlaying({
+      setPlayingSong({
         ...initialPlaying,
-        [e.target.name]: true
+        [album.id]: true
       })
     }
 
@@ -47,10 +54,10 @@ const Albums = () => {
                 <input
                   type="image"
                   alt={album.name}
-                  src={playing[album.id] ? PAUSE_ROUNDED_ICON : PLAY_ROUNDED_ICON}
+                  src={playingSong[album.id] ? PAUSE_ROUNDED_ICON : PLAY_ROUNDED_ICON}
                   name={album.id}
                   onKeyDown={handlePlay}
-                  onClick={handlePlay}
+                  onClick={() => handlePlay(album)}
                 />
               </div>
               <figure className="albums-component__internal-album--figure">
@@ -64,4 +71,12 @@ const Albums = () => {
   )
 }
 
-export default Albums
+const mapStateToProps = (state) => ({
+  song: state.activeSong.song
+})
+
+const mapDispatchToProps = dispatch => ({
+  handlePlaySong: (song) => dispatch(playSong(song))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Albums)

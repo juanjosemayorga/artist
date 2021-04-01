@@ -2,14 +2,13 @@ import React from 'react'
 import SongPlaying from '@Components/SongPlaying/SongPlaying'
 import useWindowSize from '@Hooks/useWindowSize'
 import useAudio from '@Hooks/useAudio'
+import { connect } from 'react-redux'
 import './Hero.css'
 
-const Hero = () => {
-
-  const SONG = 'https://juan-jose-mayorga-projects.s3.amazonaws.com/react/artist/audios/Alan_Walker_Fade_NCS_Release.mp3'
+const Hero = ({ song }) => {
 
   const { width } = useWindowSize()
-  const [playing, toggle] =useAudio(SONG)
+  const [playing, toggle] = useAudio(song)
 
   return (
     <div className="hero__container">
@@ -34,4 +33,12 @@ const Hero = () => {
   )
 }
 
-export default Hero
+const mapStateToProps = (state) => ({
+  song: state.activeSong.song
+})
+
+const mapDispatchToProps = {
+  
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Hero)

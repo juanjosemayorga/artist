@@ -15,7 +15,8 @@ module.exports = {
       '@Assets': path.resolve(__dirname, 'src/assets/'),
       '@Data': path.resolve(__dirname, 'src/data/'),
       '@Pages': path.resolve(__dirname, 'src/pages/'),
-      '@Hooks': path.resolve(__dirname, 'src/hooks/')
+      '@Hooks': path.resolve(__dirname, 'src/hooks/'),
+      '@Redux': path.resolve(__dirname, 'src/redux')
     }
   },
   module: {
