@@ -5,10 +5,10 @@ import useAudio from '@Hooks/useAudio'
 import { connect } from 'react-redux'
 import './Hero.css'
 
-const Hero = ({ song }) => {
+const Hero = ({ playingSong }) => {
 
   const { width } = useWindowSize()
-  const [playing, toggle] = useAudio(song)
+  const [toggle] = useAudio()
 
   return (
     <div className="hero__container">
@@ -22,7 +22,7 @@ const Hero = ({ song }) => {
             className="hero__section-container--button"
             type="button"
           >
-            {playing ? 'PAUSE' : 'PLAY'}
+            {playingSong ? 'PAUSE' : 'PLAY'}
           </button>
         </section>
         <SongPlaying
@@ -34,11 +34,12 @@ const Hero = ({ song }) => {
 }
 
 const mapStateToProps = (state) => ({
-  song: state.activeSong.song
+  song: state.activeSong.song,
+  playingSong: state.playingSong
 })
 
-const mapDispatchToProps = {
-  
-}
+const mapDispatchToProps = () => ({
+
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hero)

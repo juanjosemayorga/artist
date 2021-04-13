@@ -1,24 +1,38 @@
 import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { playingSongPause, playingSongPlay, toggleSong } from '../redux/actionCreators'
 
-const useAudio = url => {
+const useAudio = () => {
+
+  const dispatch = useDispatch()
+
+  const url = useSelector(state => state.activeSong.song)
+  const playingSong = useSelector(state => state.playingSong)
 
   const [audio] = useState(new Audio(url))
-  const [playing, setPlaying] = useState(false)
+  // const [playing, setPlaying] = useState(playingSong)
 
-  const toggle = _ => setPlaying(!playing)
+  // const toggle = _ => setPlaying(!playing)
+  const toggle = () => dispatch(toggleSong())
+  const pauseSong = () => dispatch(playingSongPause())
+  const playSong = () => dispatch(playingSongPlay())
 
   useEffect(() => {
-    playing ? audio.play() : audio.pause()
-  }, [playing])
+    audio.setAttribute('src', url)
+  }, [url])
 
   useEffect(() => {
-    audio.addEventListener('ended', () => setPlaying(false))
+    playingSong ? audio.play() : audio.pause()
+  }, [playingSong])
+
+  useEffect(() => {
+    audio.addEventListener('ended', () => pauseSong)
     return () => {
-      audio.removeEventListener('ended', () => setPlaying(false))
+      audio.removeEventListener('ended', () => pauseSong)
     }
   }, [])
 
-  return [playing, toggle]
+  return [toggle, playSong, pauseSong]
 
 }
 

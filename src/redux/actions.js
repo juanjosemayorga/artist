@@ -1,1 +1,4 @@
 export const PLAY_SONG = "PLAY_SONG"
+export const TOGGLE_SONG = "TOGGLE_SONG"
+export const PLAYING_SONG_PLAY = "PLAYING_SONG_PLAY"
+export const PLAYING_SONG_PAUSE = "PLAY_SONG_PAUSE"

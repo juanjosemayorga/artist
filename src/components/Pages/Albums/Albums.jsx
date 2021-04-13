@@ -1,41 +1,61 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import IMAGES_ALBUMS from '@Data/albums.json'
 
 import PLAY_ROUNDED_ICON from '@Assets/icons/play-round.png'
 import PAUSE_ROUNDED_ICON from '@Assets/icons/pause-round.png'
 
 import { connect } from 'react-redux'
-import { playSong } from '@Redux/actionCreators'
+import { setSong } from '@Redux/actionCreators'
 
 import useAudio from '@Hooks/useAudio'
 
 import './Albums.css'
 
-const Albums = ({ handlePlaySong }) => {
 
-  const initialPlaying = {
-    1: false,
-    2: false,
-    3: false,
-    4: false,
-    5: false,
-  }
+const Albums = ({ handlePlaySong, playingSong }) => {
 
-  const [playingSong, setPlayingSong] = useState(initialPlaying)
+  const [toggle, playSong, pauseSong] = useAudio()
+
+  const [state, setState] = useState({
+    checked: null
+  })
 
   const handlePlay = (album) => {
 
-    handlePlaySong(album)
-
     const choosed = album.id
 
-    if (playingSong[choosed]) {
-      setPlayingSong(initialPlaying)
-    } else {
-      setPlayingSong({
-        ...initialPlaying,
-        [album.id]: true
+    if(state.checked === choosed) {
+      setState({
+        checked: null
       })
+      toggle()
+      return;
+    }
+
+    if(!playingSong) {
+      handlePlaySong(album)
+
+      setTimeout(() => {
+        playSong()
+      });
+
+      setTimeout(() => {
+        setState({
+          checked: choosed
+        })
+      });
+
+    } else {
+
+      handlePlaySong(album)
+      pauseSong()
+      setState({
+        checked: choosed
+      })
+      setTimeout(() => {
+        toggle()
+      });
+
     }
 
   }
@@ -54,9 +74,8 @@ const Albums = ({ handlePlaySong }) => {
                 <input
                   type="image"
                   alt={album.name}
-                  src={playingSong[album.id] ? PAUSE_ROUNDED_ICON : PLAY_ROUNDED_ICON}
+                  src={state.checked === album.id ? PAUSE_ROUNDED_ICON : PLAY_ROUNDED_ICON}
                   name={album.id}
-                  onKeyDown={handlePlay}
                   onClick={() => handlePlay(album)}
                 />
               </div>
@@ -72,11 +91,12 @@ const Albums = ({ handlePlaySong }) => {
 }
 
 const mapStateToProps = (state) => ({
-  song: state.activeSong.song
+  song: state.activeSong.song,
+  playingSong: state.playingSong
 })
 
 const mapDispatchToProps = dispatch => ({
-  handlePlaySong: (song) => dispatch(playSong(song))
+  handlePlaySong: (song) => dispatch(setSong(song)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Albums)
