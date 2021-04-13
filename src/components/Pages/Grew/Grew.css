@@ -43,6 +43,7 @@
   font-weight: 400;
   text-align: center;
   top: -18px;
+  align-self: center;
 }
 
 .grew__browse-collections-button {
@@ -56,14 +57,16 @@
   border: 2px solid var(--grey-color);
   border-radius: 40px;
   align-self: center;
+  cursor: pointer;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
   .grew-container {
+    position: relative;
     max-width: 1366px;
     justify-self: center;
     margin: 264px auto 0;
-    /* border: 1px solid red; */
     overflow-x: hidden;
   }
   .grew__first-text {
@@ -80,4 +83,25 @@
     margin-top: 200px;
     left: -239px;
   }
+  .grew__collections-text {
+    position: absolute;
+    top: 926px;
+    font-size: 2.5rem;
+  }
+
+  .grew__browse-collections-button {
+    position: absolute;
+    top: 980px;
+    width: 353px;
+    height: 78px;
+    font-size: 2.5rem;
+    background: none;
+  }
+
 }
+
+/* @media screen and (min-width: 1366px) {
+
+
+
+} */
